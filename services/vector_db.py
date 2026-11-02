@@ -1,19 +1,14 @@
-﻿import os
+﻿
+import os
 import chromadb
-from chromadb.utils import embedding_functions
 
 # Initialize ChromaDB — stores embeddings locally
 chroma_client = chromadb.PersistentClient(path="./chroma_db")
 
-# Use a lightweight embedding model
-embedding_fn = embedding_functions.SentenceTransformerEmbeddingFunction(
-    model_name="all-MiniLM-L6-v2"
-)
-
-# Create or load the medical knowledge collection
+# Use ChromaDB's default ONNX embedding function
+# This avoids the heavy PyTorch/Sentence Transformers dependency.
 collection = chroma_client.get_or_create_collection(
-    name="icmr_guidelines",
-    embedding_function=embedding_fn
+    name="icmr_guidelines"
 )
 
 
@@ -27,6 +22,11 @@ def load_documents():
         return
 
     docs_path = "./docs"
+
+    if not os.path.exists(docs_path):
+        print("Docs folder not found. Skipping guideline loading.")
+        return
+
     all_chunks = []
     all_ids = []
     all_metadata = []
@@ -39,23 +39,28 @@ def load_documents():
             with open(filepath, "r", encoding="utf-8") as f:
                 content = f.read()
 
-            # Split into chunks of ~500 characters
             chunks = [
-                content[i:i+500]
+                content[i:i + 500]
                 for i in range(0, len(content), 500)
             ]
 
             for i, chunk in enumerate(chunks):
                 all_chunks.append(chunk)
                 all_ids.append(f"{disease_name}_chunk_{i}")
-                all_metadata.append({"disease": disease_name, "source": filename})
+                all_metadata.append({
+                    "disease": disease_name,
+                    "source": filename
+                })
 
-    collection.add(
-        documents=all_chunks,
-        ids=all_ids,
-        metadatas=all_metadata
-    )
-    print(f"Loaded {len(all_chunks)} chunks into ChromaDB")
+    if all_chunks:
+        collection.add(
+            documents=all_chunks,
+            ids=all_ids,
+            metadatas=all_metadata
+        )
+        print(f"Loaded {len(all_chunks)} chunks into ChromaDB")
+    else:
+        print("No guideline documents found.")
 
 
 def query_guidelines(symptoms: list, suspected_disease: str = None) -> str:
@@ -63,8 +68,10 @@ def query_guidelines(symptoms: list, suspected_disease: str = None) -> str:
     Searches ICMR guidelines for relevant clinical information.
     Returns the most relevant text chunks as context for the AI.
     """
-    # Build search query from symptoms and suspected disease
-    query = f"{suspected_disease or ''} {' '.join(symptoms)} symptoms treatment guidelines India"
+    query = (
+        f"{suspected_disease or ''} "
+        f"{' '.join(symptoms)} symptoms treatment guidelines India"
+    )
 
     results = collection.query(
         query_texts=[query],
@@ -74,7 +81,6 @@ def query_guidelines(symptoms: list, suspected_disease: str = None) -> str:
     if not results["documents"][0]:
         return "No relevant guidelines found."
 
-    # Combine top 3 chunks into one context string
     context = "\n\n".join(results["documents"][0])
     return context
 
