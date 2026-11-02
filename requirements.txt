@@ -6,3 +6,4 @@ groq
 deep-translator
 requests
 chromadb
+sentence-transformers
