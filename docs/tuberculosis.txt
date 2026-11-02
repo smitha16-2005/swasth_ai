@@ -1,0 +1,39 @@
+TUBERCULOSIS - CLINICAL GUIDELINES (NTEP/ICMR)
+
+DEFINITION:
+TB is a bacterial infection caused by Mycobacterium tuberculosis,
+primarily affecting the lungs.
+
+SYMPTOMS:
+- Cough lasting more than 2 weeks
+- Blood in sputum
+- Chest pain
+- Fever (low grade, usually evening)
+- Night sweats
+- Unexplained weight loss
+- Fatigue and weakness
+
+WARNING SIGNS (Severe TB - Immediate Hospital):
+- Coughing large amounts of blood
+- Severe difficulty breathing
+- High fever with rapid deterioration
+- Meningitis symptoms (stiff neck, headache)
+
+RISK CLASSIFICATION:
+RED - massive haemoptysis, respiratory failure, TB meningitis
+YELLOW - cough more than 2 weeks with any of the above symptoms
+GREEN - brief cough without other symptoms, low risk
+
+TREATMENT PROTOCOL:
+NTEP standard regimen:
+Intensive phase (2 months): HRZE (Isoniazid, Rifampicin, Pyrazinamide, Ethambutol)
+Continuation phase (4 months): HR (Isoniazid, Rifampicin)
+Drug Resistant TB: Refer to DRTB centre
+
+CONTACT TRACING:
+All household contacts must be screened.
+Children under 5 in contact should receive preventive therapy.
+
+WHEN TO REFER:
+All presumptive TB cases should be tested with CBNAAT/TrueNat.
+Drug resistant cases must be referred to DRTB centre.

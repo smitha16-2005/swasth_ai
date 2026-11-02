@@ -1,0 +1,41 @@
+MALARIA - CLINICAL GUIDELINES (ICMR/NVBDCP)
+
+DEFINITION:
+Malaria is a life-threatening disease caused by Plasmodium parasites
+transmitted through infected female Anopheles mosquitoes.
+
+SYMPTOMS:
+- Cyclical fever with chills (every 48-72 hours)
+- Sweating episodes following fever
+- Severe headache
+- Muscle pain and fatigue
+- Nausea and vomiting
+- Anaemia
+
+WARNING SIGNS (Severe Malaria - Immediate Hospital):
+- Impaired consciousness or seizures
+- Severe anaemia
+- Respiratory distress
+- Abnormal bleeding
+- Jaundice
+- Haemoglobinuria (dark urine)
+
+RISK CLASSIFICATION:
+RED - seizures, unconsciousness, severe anaemia, respiratory distress
+YELLOW - cyclical fever with chills, recent travel to forest/rural area
+GREEN - mild fever without cyclical pattern, no travel history
+
+TREATMENT PROTOCOL:
+Plasmodium vivax: Chloroquine + Primaquine (14 days)
+Plasmodium falciparum: Artemisinin Combination Therapy (ACT)
+Severe malaria: IV Artesunate - hospital only
+
+RISK FACTORS:
+- Travel to forested or tribal areas
+- Living near stagnant water
+- No mosquito net usage
+- Previous malaria history
+
+WHEN TO REFER:
+Any suspected severe malaria should be referred immediately.
+Rapid Diagnostic Test (RDT) should be performed at PHC level.

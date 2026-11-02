@@ -1,0 +1,39 @@
+TYPHOID FEVER - CLINICAL GUIDELINES (ICMR)
+
+DEFINITION:
+Typhoid is a bacterial infection caused by Salmonella Typhi,
+spread through contaminated food and water.
+
+SYMPTOMS:
+- Sustained fever that increases gradually each day
+- Headache
+- Weakness and fatigue
+- Stomach pain
+- Constipation or diarrhoea
+- Rose-coloured spots on chest (rare)
+- Loss of appetite
+
+WARNING SIGNS (Severe Typhoid - Immediate Hospital):
+- Intestinal perforation (sudden severe abdominal pain)
+- Intestinal bleeding
+- Encephalopathy (confusion, altered consciousness)
+- Myocarditis
+
+RISK CLASSIFICATION:
+RED - severe abdominal pain, bleeding, confusion
+YELLOW - fever worsening daily for more than 5 days, weakness
+GREEN - mild fever less than 3 days, no warning signs
+
+TREATMENT PROTOCOL:
+First line: Azithromycin or Cefixime (outpatient)
+Severe cases: IV Ceftriaxone (hospital)
+Duration: 7-14 days
+
+PREVENTION:
+- Safe drinking water
+- Proper sanitation
+- Typhoid vaccination
+- Hand hygiene
+
+WHEN TO REFER:
+Refer immediately if intestinal complications suspected.

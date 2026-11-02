@@ -1,0 +1,37 @@
+DENGUE FEVER - CLINICAL GUIDELINES (ICMR/WHO)
+
+DEFINITION:
+Dengue is a mosquito-borne viral infection causing severe flu-like illness.
+
+SYMPTOMS:
+- Sudden high fever (38-40°C)
+- Severe headache
+- Pain behind eyes
+- Joint and muscle pain
+- Nausea and vomiting
+- Skin rash appearing 2-5 days after fever
+- Mild bleeding from nose or gums
+
+WARNING SIGNS (Severe Dengue - Immediate Hospital):
+- Severe abdominal pain
+- Persistent vomiting
+- Bleeding from gums or nose
+- Blood in vomit or stool
+- Rapid breathing
+- Fatigue and restlessness
+- Liver enlargement
+
+RISK CLASSIFICATION:
+RED - severe abdominal pain, persistent vomiting, bleeding, difficulty breathing
+YELLOW - fever more than 3 days, joint pain, rash, no warning signs
+GREEN - mild fever less than 2 days, no warning signs
+
+TREATMENT PROTOCOL:
+- No specific antiviral treatment
+- Paracetamol for fever (avoid aspirin and ibuprofen)
+- Oral rehydration - minimum 2 litres per day
+- Rest and monitor
+- Platelet transfusion only if below 10,000
+
+WHEN TO REFER:
+Immediately refer to hospital if any warning signs appear.
